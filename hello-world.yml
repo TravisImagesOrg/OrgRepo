@@ -2,7 +2,7 @@ os: linux
 dist: focal
 vm:
   create:
-    name: custom_Himanshu_example
+    name: org_rep_Himage_HexxWgon
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
