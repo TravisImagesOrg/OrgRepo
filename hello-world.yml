@@ -1,12 +1,10 @@
-os: linux
-dist: focal
-vm:
-  create:
-    name: sfsdfsdfsdf
-before_install:
-  - sudo apt-get -y install libxml2-dev
-addons:
-  apt:
-    update: true
-script:
-  - echo "OK8"
+jobs:
+  include:
+    - os: linux
+      language: python
+      python:
+       - "3.8"
+      arch: amd64
+      dist: focal
+      script:
+        - python hello_world.py
